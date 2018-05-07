@@ -81,7 +81,6 @@ public class TwitterAPI {
 		Thread.sleep(5000);
 		RestAssured.baseURI = baseURI;
 		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).
-		
 				
 		when().
 		post("/destroy/"+tweetID+".json").
