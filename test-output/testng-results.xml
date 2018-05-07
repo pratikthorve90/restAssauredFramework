@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13577" started-at="2018-05-07T11:54:07Z" finished-at="2018-05-07T11:54:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13577" started-at="2018-05-07T11:54:07Z" finished-at="2018-05-07T11:54:20Z">
+      <class name="restAssauredFramework.TwitterAPI">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:restAssauredFramework.TwitterAPI@464bee09]" name="beforeTest" is-config="true" duration-ms="91" started-at="2018-05-07T11:54:07Z" finished-at="2018-05-07T11:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="agetTweet()[pri:0, instance:restAssauredFramework.TwitterAPI@464bee09]" name="agetTweet" duration-ms="6191" started-at="2018-05-07T11:54:07Z" finished-at="2018-05-07T11:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agetTweet -->
+        <test-method status="PASS" signature="bpostTweet()[pri:0, instance:restAssauredFramework.TwitterAPI@464bee09]" name="bpostTweet" duration-ms="1278" started-at="2018-05-07T11:54:13Z" finished-at="2018-05-07T11:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bpostTweet -->
+        <test-method status="PASS" signature="cdeleteTweet()[pri:0, instance:restAssauredFramework.TwitterAPI@464bee09]" name="cdeleteTweet" duration-ms="5964" started-at="2018-05-07T11:54:14Z" finished-at="2018-05-07T11:54:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cdeleteTweet -->
+      </class> <!-- restAssauredFramework.TwitterAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
