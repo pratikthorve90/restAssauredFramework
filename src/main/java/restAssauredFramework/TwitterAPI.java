@@ -44,12 +44,12 @@ public class TwitterAPI {
 	{
 		RestAssured.baseURI = baseURI;
 		
-		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).log().all().
+		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).
 				
 		when().
 		get("/home_timeline.json").
 		
-		then().log().all().contentType(ContentType.JSON).and().
+		then().contentType(ContentType.JSON).and().
 		extract().response();
 		
 		JsonPath js = ReusableMethods.rawtoJson(res);
@@ -62,13 +62,13 @@ public class TwitterAPI {
 	{
 		RestAssured.baseURI = baseURI;
 		
-		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).log().all().
+		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).
 		queryParam("status", "This is a Rest Tweet1").	
 		
 		when().
 		post("/update.json").
 		
-		then().log().all().contentType(ContentType.JSON).
+		then().contentType(ContentType.JSON).
 		extract().response();
 		
 		JsonPath js = ReusableMethods.rawtoJson(res);
@@ -80,12 +80,12 @@ public class TwitterAPI {
 	{
 		Thread.sleep(5000);
 		RestAssured.baseURI = baseURI;
-		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).log().all().
+		Response res = given().auth().oauth(ConsumerKey, ConsumerSecret, AccessToken, TokenSecret).
 		
 		when().
 		post("/destroy/"+tweetID+".json").
 		
-		then().log().all().contentType(ContentType.JSON).
+		then().contentType(ContentType.JSON).
 		extract().response();	
 
 	}
