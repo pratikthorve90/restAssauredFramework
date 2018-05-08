@@ -25,8 +25,7 @@ public class TwitterAPI {
 	String TokenSecret = null;
 	String baseURI = null;
 	String tweetID = null;
-	
-	
+		
 	@BeforeTest
 	public void beforeTest() throws IOException
 	{
