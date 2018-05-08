@@ -26,8 +26,7 @@ public class TwitterAPI {
 	String baseURI = null;
 	String tweetID = null;	
 
-	
-		
+
 	@BeforeTest
 	public void beforeTest() throws IOException
 	{
