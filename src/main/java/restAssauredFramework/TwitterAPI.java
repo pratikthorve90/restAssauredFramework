@@ -77,7 +77,7 @@ public class TwitterAPI {
 		tweetID = js.getString("id");
 	}
 	
-	// Below Test is not enabled
+	// Below Test is not enabled //
 	@Test(enabled=false)
 	public void cdeleteTweet() throws InterruptedException	
 	{
